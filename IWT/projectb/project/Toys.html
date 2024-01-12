@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Online Auction System</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<script src="js/myScript.js">  </script>
+	<style type="text/css">
+	#navigation {
+	line-height:26px;
+	background-color:grey;
+	width:160px;
+	float:left;
+	padding:38px;
+	height:1400px;
+}
+#section{
+	width:350;
+	float:left;
+	padding:35px;
+	}
+.b9{
+	
+	background:orange;
+	color:white;
+	border-radius:5px;
+	cursor:pointer;
+	position:relative;
+	padding:6px;
+	font-family:sans-serif;
+	border:none;
+	font-size:15px;
+	
+	
+	
+}
+</style>
+</head>
+<body>
+
+
+<!--header and navigation bar-->
+<div>
+		<body>
+			<img src="Images\img1.png" alt="logo" class="logo">
+			 <h2 class="sansserif">Quick Auctions</h2>
+			 <h3 class="new3">The online Auction System</h3><br>
+		 
+			 <hr class="new4">
+			 
+	 
+	 
+		 <div class="topnav">
+			 <a href="Home">Home</a>
+			 <a class="active" href="Furniture.html">Categories</a>
+			 <a href="#bidding">Bidding</a>
+			 <a href="#about">About</a>
+			 <a href="Contact.html">Contact</a>
+		 
+				<div class="corner">
+			 			<a href="Login.html">Login</a>
+						 <a href="#Sign up">Sign up</a>
+				</div>
+
+		</div>
+</div>
+<!--search-form-->
+<nav>
+	
+<form class="search-form">
+	<input type="text" placeholder="Search" >
+	<button class="b1">Search</button>
+</form>
+</nav>
+
+
+
+<!--side bar-->
+<form>
+<div id="navigation">
+<h3>Items</h3>
+<hr>
+<h4>Category</h4>
+ 
+
+<input type="checkbox" id="item1" name="item-1" value="furniture" >
+<label for="item1">  <a href="Furniture.html">Furniture</a></label>
+<br/>
+
+<input type="checkbox" id="item2" name="item-2" value="Electronic">
+<label for="item2"><a href="Electronic Items.html">Electronic Items</a></label>
+<br/>
+<input type="checkbox" id="item3" name="item-3" value="vehicles">
+<label for="item3"><a href="vehicles.html">vehicles</a></label>
+<br/>
+<input type="checkbox" id="item4" name="item-4" value="clothing">
+<label for="item4"><a href="clothing.html">clothing</a></label>
+<br/>
+<input type="checkbox" id="item5" name="item-5" value="Toys"checked="checked" disabled>
+<label for="item5"><a href="Toys.html">Toys</a></label>
+<br/>
+<br/>
+
+
+<hr>
+<h4>Type</h4>
+
+
+<input type="checkbox" id="type1" name="type-1" value="Boys">
+<label for="type1">Boys</label>
+<br/>
+
+<input type="checkbox" id="type2" name="type-2" value="Girls">
+<label for="type2">Girls</label>
+<br/>
+<input type="checkbox" id="type3" name="type-3" value="Men">
+<label for="type3">Men</label>
+<br/>
+<input type="checkbox" id="type4" name="type-4" value="Women">
+<label for="type4">Women</label>
+<br/>
+<br/>
+
+<hr>
+<h4>Price</h4>
+<input type="checkbox" id="price1" name="price-1" value="price1">
+<label for="price1">Under 10$</label>
+<br/>
+
+<input type="checkbox" id="price2" name="price-2" value="price2">
+<label for="price2">Under 100$</label>
+<br/>
+
+</div>
+
+</form>
+
+<!--item details-->
+<div id="section">
+<table  width="1000" size="100">
+
+  <tr>
+    <th></th>
+    <th style="text-align:left;"></th>
+  </tr>
+  <tr>
+    <td><br/><br/><font color="#A9A9A9">Buzz Lightyear from Toy Story illustration</font><br/>
+	<br/>
+	<img src="images/photo17.png" alt="auction Logo" style="width:240px;height:260px;"></td>
+    <td>
+    <ul type="squre">
+    <li>Walking, talking Toy Story 4 Buzz Lightyear</li>
+    <li>Iconic design and 40+ sound effects</li>
+    <li>Pop-out wings and light-up laser</li>
+    <li>For ages 3+</li>
+    <li>Action Figure</li>
+    
+    </ul>
+	<div >
+		<button class="b9">Bid</button>
+		<button class="b9" type="button" id="button1" onclick="loadData('button1')">Add to watchlist</button>
+		<p class="text1" id="para1"> </p>
+	</div>
+    </td>
+    
+  </tr>
+  <tr>
+    <td><br/><br/><font color="#A9A9A9">brown bear plush toy Teddy bear </font><br/>
+	<br/>
+	<img src="images/photo18.png" alt="auction Logo" style="width:298px;height:270px;"></td>
+    <td>
+    <ul type="squre">
+    <li>Super cute Brown Bear Plush</li>
+    <li>High-quality and child-friendly fabric</li>
+    <li>Non-fading</li>
+    <li>Perfect cuddle buddy</li>
+    <li>Soft, floppy, and comfy</li>
+    <li>50-100cm long</li>
+    </ul>
+	<div >
+		<button class="b9">Bid</button>
+		<button class="b9" type="button" id="button2" onclick="loadData('button2')">Add to watchlist</button>
+		<p class="text1" id="para2"> </p>
+	</div>
+    
+    </td>
+  </tr>
+   <tr>
+    <td><br/><br/><font color="#A9A9A9">white rabbit plush toy illustration Hare Rabbit </font><br/>
+	<br/>
+	
+	<img src="images/photo19.png" alt="auction Logo" style="width:250px;height:260px;"></td>
+    <td>
+    <ul type="squre">
+    <li>Tested to and passes the European </li>
+    <li>Safety Standard for toys: EN71 parts 1, 2 & 3 for all ages.</li>
+    <li>Suitable from birth. </li>
+    <li>Large sizes - please do not leave in a cot/ crib.</li>
+    <li>Hand wash only; do not tumble dry, dry clean or iron. Not recommended to clean in a washing machine</li>
+    <li>Check all labels upon arrival of purchase</li>
+    </ul>
+	<div >
+		<button class="b9">Bid</button>
+		<button class="b9" type="button" id="button3" onclick="loadData('button3')">Add to watchlist</button>
+		<p class="text1" id="para3"> </p>
+	</div>
+    
+    </td>
+	
+  </tr>
+  
+  <tr>
+    <td><br/><br/><font color="#A9A9A9">building blocks</font><br/>
+	<img src="images/photo20.png" alt="auction Logo" style="width:300px;height:270px;"></td>
+    <td>
+    <ul type="squre">
+    <li>Quality ABS Materials</li>
+    <li>Unleash your Child's Engineering Skills</li>
+    <li>Enhance Logical Thinking and Problem Solvin</li>
+    <li>Material: Plastic ABS</li>
+    <li>Box Size: 28 x 26 x 6.5 cm</li>
+    <li>Weight: 200g</li>
+    </ul>
+	<div >
+		<button class="b9">Bid</button>
+		<button class="b9" type="button" id="button4" onclick="loadData('button4')">Add to watchlist</button>
+		<p class="text1" id="para4"> </p>
+	</div>
+	<p style=""></p>
+    </td>
+    
+  </tr>
+</table>
+</div>
+
+
+
+
+<!--footer-->
+<div class="side3">
+
+<hr class="new4">
+
+<img src="Images/img5.png" alt="payment" class="payment">
+<img src="Images/img6.png" alt="SM" class="SM">
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
